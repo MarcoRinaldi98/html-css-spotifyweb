@@ -60,6 +60,9 @@ html{
 .plr-10 {
     padding: 0 10px;
 }
+.pb-5 {
+    padding-bottom: 5px;
+}
 .ptb-5 {
     padding: 5px 0;
 }
@@ -81,12 +84,13 @@ html{
 .big-icon-size {
     font-size: 24px;
 }
-.hr-grey {
-    border: 1px soldi gray;
-}
 .hide {
     display: none;
 }
+.sidebar-icon {
+    font-size: 30px;
+}
+
 
 
 /* MAIN */
@@ -99,12 +103,11 @@ main {
 .sidebar {
     background-color: var(--sidebar-color);
     width: 50px;
-    padding: 4px;
+    padding: 10px;
+    position: relative;
 }
-.sidebar-header {
-    height: 90%;
-}
-.sidebar-header img {
+
+.sidebar img {
     filter: grayscale(100%);
     width: 100%;
 }
@@ -116,16 +119,38 @@ main {
     text-align: center;
     line-height: 40px;
 }
-.sidebar-footer {
-    height: 10%;
+.add-playlist h3 {
+    font-size: 1rem;
+    padding: 10px 0 5px 0;
+}
+.sidebar-main {
+    width: 100%;
+    height: 150px;
+}
+.sidebar-main h4 {
+    padding-bottom: 10px;
 }
 .sidebar-footer .icon-filter {
     color: var(--white-color);
     font-size: 30px;
 }
 .sidebar-footer i {
-    padding: 5px;
+    width: 20%;
 }
+.sidebar-footer .text {
+    width: calc(80% - 20px);   
+}
+.fa-circle-down {
+    margin: auto;
+}
+.sidebar-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 10px;
+}
+
+
 
 
 /* CONTENT */
@@ -256,23 +281,21 @@ footer {
         width: calc(100% - 200px);
         left: 200px;
     }
-    .sidebar-header {
-        height: 35%;
-    }
-    .sidebar-main {
-        height: calc(55% - 20px);
-    }
-    .sidebar-footer {
-        height: 20%;
-    }
-    .sidebar-footer i {
-        padding: 0px;
-    }
     .hide {
         display: block;
     }
     .logo {
         display: none;
+    }
+    .sidebar-icon {
+        width: 20%;
+    }
+    .menu-sidebar .text {
+        width: 80%;
+    }
+    .sidebar-footer .text {
+        width: 80%;
+        padding-left: 20px;
     }
 }
 
