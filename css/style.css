@@ -5,6 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* variabili */
+:root {
+    --main-color: #11161e;
+    --sidebar-color: #000;
+    --footer-color: #282828;
+    --white-color: #fff;
+    --grey-color: #566979;
+}
+
 /* Regole di DEBUG */
 .debug .content-nav {
     background-color: green;
@@ -17,6 +27,15 @@
     background-color: yellow;
     height: 200px;
 }
+.debug .f-box {
+    width: 100px;
+    height: 50px;
+    background-color: lightgray;
+}
+.debug .sidebar-container {
+    background-color: red;
+    height: 100%;
+}
 
 
 /* Regole CSS generali */
@@ -26,6 +45,12 @@ html{
 
 .d-flex {
     display: flex;
+}
+.s-between {
+    justify-content: space-between;
+}
+.align-c {
+    align-items: center;
 }
 .wrap {
     flex-wrap: wrap;
@@ -48,14 +73,17 @@ html{
 
 /* MAIN */
 main {
-    background-color: #11161e;
+    background-color: var(--main-color);
     height: calc(100vh - 100px);
 }
 
 /* SIDEBAR - menu di sinistra */
 .sidebar {
-    background-color: black;
+    background-color: var(--sidebar-color);
     width: 50px;
+}
+.sidebar-container {
+    margin: 1rem;
 }
 
 /* CONTENT */
@@ -92,8 +120,9 @@ main {
 
 /* FOOTER */
 footer {
-    background-color: #282828;
+    background-color: var(--footer-color);
     height: 100px;
+    padding: 1rem;
 }
 
 
@@ -112,13 +141,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    #recently-played .cover-item {
+    .cover-item {
         width: 25%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    #recently-played .cover-item {
+    .cover-item {
         width: calc(100% / 6);
     }
 }
