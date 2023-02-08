@@ -6,10 +6,123 @@
     box-sizing: border-box;
 }
 /* Regole di DEBUG */
-
+.debug .content-nav {
+    background-color: green;
+    height: 50px;
+}
+.debug .cover-list {
+    border: 2px dashed red;
+}
+.debug .cover-container {
+    background-color: yellow;
+    height: 200px;
+}
 
 
 /* Regole CSS generali */
 html{
     font-family: sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.overflow-scroll {
+    overflow-y: scroll;
+}
+.c-white {
+    color: white;
+}
+.c-grey {
+    color: gray;
+}
+.ptb-1 {
+    padding: 1rem 0;
+}
+.ptb-2 {
+    padding: 1rem 0;
+}
+
+/* MAIN */
+main {
+    background-color: #11161e;
+    height: calc(100vh - 100px);
+}
+
+/* SIDEBAR - menu di sinistra */
+.sidebar {
+    background-color: black;
+    width: 50px;
+}
+
+/* CONTENT */
+.content {
+    width: calc(100% - 50px);
+}
+
+/* DIV - call-to-action */
+#cta {
+    position: fixed;
+    left: 50px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 70px;
+    width: calc(100% - 50px);
+}
+
+/* NAV - barra di navigazione del content */
+.content-nav {
+    margin-top: 80px;
+}
+
+/* SECTION */
+.cover-list {
+    list-style: none;
+}
+.cover-item {
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #282828;
+    height: 100px;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 576px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        width: calc(100% - 200px);
+    }
+    #cta {
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #recently-played .cover-item {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #recently-played .cover-item {
+        width: calc(100% / 6);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
