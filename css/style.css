@@ -16,11 +16,6 @@
 }
 
 /* Regole di DEBUG */
-.debug .f-box {
-    width: 100px;
-    height: 50px;
-    background-color: lightgray;
-}
 .debug .sidebar-container {
     background-color: red;
     height: 90%;
@@ -47,6 +42,9 @@ html{
 .overflow-scroll {
     overflow-y: scroll;
 }
+.t-center {
+    text-align: center;
+}
 .c-white {
     color: white;
 }
@@ -56,12 +54,25 @@ html{
 .c-grey {
     color: gray;
 }
+.plr-5 {
+    padding: 0 5px;
+}
+.plr-10 {
+    padding: 0 10px;
+}
 .ptb-1 {
     padding: 1rem 0;
 }
 .ptb-2 {
     padding: 1rem 0;
 }
+.icon-size {
+    font-size: 16px;
+}
+.big-icon-size {
+    font-size: 24px;
+}
+
 
 /* MAIN */
 main {
@@ -160,6 +171,38 @@ footer {
     height: 100px;
     padding: 1rem;
 }
+.f-box li {
+    display: inline-block;
+    margin: 10px;
+}
+.f-box .progress-bar {
+    background-color: grey;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+}
+.progress-bar div {
+    height: 5px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+.f-box img {
+    height: 60px;
+    width: 70px;
+}
+.f-box.left {
+    width: 20%
+}
+.f-box.center {
+    width: 40%
+}
+.f-box.right {
+    width: 20%;
+}
+
+
+
 
 
 /* MEDIA QUERY */
