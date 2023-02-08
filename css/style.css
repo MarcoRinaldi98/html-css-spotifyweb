@@ -16,10 +16,6 @@
 }
 
 /* Regole di DEBUG */
-.debug .content-nav {
-    background-color: green;
-    height: 50px;
-}
 .debug .cover-list {
     border: 2px dashed red;
 }
@@ -115,6 +111,17 @@ main {
 /* NAV - barra di navigazione del content */
 .content-nav {
     margin-top: 80px;
+    text-align: center;
+}
+.content-nav li {
+    display: inline-block;
+    margin: 10px;
+}
+.content-nav a {
+    text-decoration: none;
+    color: var(--grey-color);
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /* SECTION */
