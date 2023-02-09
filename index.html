@@ -14,76 +14,79 @@
 <body class="debug">
     <main class="d-flex">
         <aside class="sidebar">
-            <section class="logo-sidebar">
-                <img class="logo" src="img/logo-small.svg" alt="logo solo immagine">
-                <img class="hide" src="img/logo.svg" alt="logo immagine e scritta">
-            </section>
+            <section class="sidebar-top">
+                <div class="logo">
+                    <img class="logo-small" src="img/logo-small.svg" alt="immagine logo spotify">
+                    <img class="hide" src="img/logo.svg" alt="immagine logo spotify piu scritta">
+                </div>
 
-            <nav class="menu-sidebar">
-                <ul>
-                    <li>
-                        <div class="ptb-5 d-flex align-c jc-center">
-                            <i class="sidebar-icon c-grey fa-solid fa-house"></i>
-                            <h4 class="hide c-grey text">Home</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="d-flex align-c jc-center">
-                            <i class="sidebar-icon c-grey fa-solid fa-magnifying-glass"></i>
-                            <h4 class="hide c-grey text">Cerca</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ptb-5 d-flex align-c jc-center">
-                            <i class="sidebar-icon c-grey fa-solid fa-lines-leaning"></i>
-                            <h4 class="hide c-grey text">La tua libreria</h4>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            
-            <section class="add-playlist hide ptb-1">
-                <h3 class="c-white">PLAYLIST</h3>
-                <div class="d-flex align-c">
-                    <a href="#">
+                <div class="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/home.svg" alt="immagine icona casa">
+                                <span class="label hide">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/search.svg" alt="immagine icona ricerca">
+                                <span class="label hide">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="immagine icona playlist">
+                                <span class="label hide">Home</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="playlist-main hide">
+                    <h3>PLAYLIST</h3>
+
+                    <a href="#" class="add-playlist">
                         <i class="fa-solid fa-plus"></i>
+                        <span class="label">Crea Playlist</span>
                     </a>
-                    <h4 class="ml-20 c-grey">Crea Playlist</h4>
+
+                    <ul class="overflow-scroll">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
                 </div>
             </section>
 
-            <div class="sidebar-main overflow-scroll hide">
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                <h4 class="c-grey">Nome Playlist</h4>
-                
-            </div>
-
-            <div class="sidebar-footer">
-                <ul>
-                    <li>
-                        <div class="d-flex align-c jc-center ptb-5">
-                            <i class="c-grey fa-regular fa-circle-down"></i>
-                            <h4 class="c-grey hide text">Installa app</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <hr class="hide"/>
-                    </li>
-                    <li>
-                        <div class="d-flex align-c jc-center ptb-5">
-                            <i class="sidebar-icon c-grey fa-solid fa-circle-user"></i>
-                            <h3 class="c-white hide text">John Doe</h3>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <section class="sidebar-bottom">
+                <div class="install">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span class="label hide">Installa app</span>
+                    </a>
+                </div>
+                <hr class="hide"/>
+                <div>
+                    <a href="#">
+                        <img src="img/profile.svg" alt="immagine icona user">
+                        <span class="label hide">John Doe</span>
+                    </a>
+                </div>
+            </section>
         </aside>
 
         <div class="content overflow-scroll">
