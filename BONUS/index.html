@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Spotify</title>
+</head>
+<body class="debug">
+    <main class="d-flex">
+        <aside class="sidebar">
+            <section class="sidebar-top">
+                <div class="logo">
+                    <img class="logo-small" src="img/logo-small.svg" alt="immagine logo spotify">
+                    <img class="hide" src="img/logo.svg" alt="immagine logo spotify piu scritta">
+                </div>
+
+                <div class="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/home.svg" alt="immagine icona casa">
+                                <span class="label hide">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/search.svg" alt="immagine icona ricerca">
+                                <span class="label hide">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="immagine icona playlist">
+                                <span class="label hide">Home</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="playlist-main hide">
+                    <h3>PLAYLIST</h3>
+
+                    <a href="#" class="add-playlist">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="label">Crea Playlist</span>
+                    </a>
+
+                    <ul class="overflow-scroll">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sidebar-bottom">
+                <div class="install">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span class="label hide">Installa app</span>
+                    </a>
+                </div>
+                <hr class="hide"/>
+                <div>
+                    <a href="#">
+                        <img src="img/profile.svg" alt="immagine icona user">
+                        <span class="label hide">John Doe</span>
+                    </a>
+                </div>
+            </section>
+        </aside>
+
+        <div class="content overflow-scroll">
+            <div id="cta" class="d-flex align-c">
+                <a href="#">
+                    EFFETTUA L'UPGRADE
+                </a>
+            </div>
+
+            <nav class="content-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            IN EVIDENZA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            PODCAST
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            CLASSIFICHE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            GENERI E MOOD
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            NUOVE USCITE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            SCOPRI
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="recently-played">
+                <h2 class="c-white ptb-2 ml-20">Recently played</h2>
+                <ul class="cover-list d-flex wrap">
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/metal_lifting.jpg" alt="foto disco heavy metal">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h3 class="c-white">Heavy Metal</h3>
+                            <h4 class="c-grey">Subtitle</h4>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/stranger.jpeg" alt="foto disco stranger things">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h3 class="c-white">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <h4 class="c-grey">Kyle Dixon & Michael Stein</h4>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/aquietplace.jpeg" alt="foto disco a quiet place">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h3 class="c-white">A quiet place</h3>
+                            <h4 class="c-grey">Subtitle</h4>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/split.jpeg" alt="foto disco split">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h3 class="c-white">Split</h3>
+                            <h4 class="c-grey">Subtitle</h4>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/cure.jpeg" alt="foto disco a cure for wellness">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h3 class="c-white">A cure for wellness</h3>
+                            <h4 class="c-grey">Subtitle</h4>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/sinister.jpeg" alt="foto disco sinister">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h3 class="c-white">Sinister</h3>
+                            <h4 class="c-grey">Subtitle</h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="for-you">
+                <h2 class="c-white ptb-1 ml-20">Creato per John Doe</h2>
+                <h4 class="c-grey ml-20">Piu ascolti, piu accurati saranno i suggerimenti.</h4>
+                <ul class="cover-list d-flex wrap">
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/radar.jpeg" alt="foto album release radar">
+                                <div class="overlay"></div>
+                            </div>
+                            <h3 class="c-white">Release Radar</h3>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="wrapper">
+                                <img src="./img/mixdaily.jpeg" alt="foto album daili mix 1">
+                                <div class="overlay"></div>
+                            </div>
+                            <h3 class="c-white">Daily Mix 1</h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="popular">
+                <h2 class="c-white ptb-1 ml-20">Artisti piu popolari</h2>
+                <h4 class="c-grey ml-20">Piu ascolti, piu accurati saranno i suggerimenti.</h4>
+                <ul class="cover-list d-flex wrap">
+                    <li class="cover-item">
+                        <div class="cover-container">
+                            <div class="rounded">
+                                <img src="./img/youg.jpeg" alt="foto artista Lana del Rey">
+                            </div>
+                            <h3 class="c-white">Lana del Rey</h3>
+                        </div>
+                    </li>
+                    <li class="cover-item">
+                        <div class="cover-container">
+                        <div class="rounded">
+                            <img src="./img//einaudi.jpeg" alt="foto artista Einaudi">
+                        </div>
+                            <h3 class="c-white">Ludovico Einaudi</h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="d-flex s-between align-c">
+        <div class="f-box d-flex align-c left">
+            <img src="img/sinister.jpeg" alt="foto disco sinister">
+            <div class="plr-10">
+                <h5 class="c-white">Sinister</h5>
+                <div class="brano-footer">
+                    <h6 class="c-grey">Brano</h6>
+                    <h6 class="c-grey">Nome</h6>
+                </div>
+            </div>
+            <div class="functions f-hide">
+                <h5 class="c-grey">
+                    <i class="fa-regular fa-heart"></i>
+                </h5>
+                <h5 class="c-grey">
+                    <i class="fa-regular fa-folder"></i>
+                </h5>
+            </div>
+        </div>
+        <div class="f-box t-center center">
+            <div>
+                <ul>
+                    <li>
+                        <i class="c-white icon-size fa-solid fa-shuffle"></i>
+                    </li>
+                    <li>
+                        <i class="c-white icon-size fa-solid fa-backward-step"></i>
+                    </li>
+                    <li>
+                        <i class="c-white big-icon-size fa-regular fa-circle-play"></i>
+                    </li>
+                    <li>
+                        <i class="c-white icon-size fa-solid fa-forward-step"></i>
+                    </li>
+                    <li>
+                        <i class="c-white icon-size fa-solid fa-arrow-rotate-right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-c">
+                <span class="plr-5 c-white f-hide">0:25</span>
+                <div class="bar">
+                    <div class="progress-bar">
+                        <div class="control-point"></div>
+                    </div>
+                </div>
+                <span class="plr-5 c-white f-hide">4:35</span>
+            </div>
+        </div>
+        <div class="f-box d-flex align-c right">
+            <i class="c-white icon-size plr-5 fa-solid fa-list-ul f-hide"></i>
+            <i class="c-white icon-size plr-5 fa-solid fa-desktop f-hide"></i>
+            <i class="c-white icon-size plr-5 fa-solid fa-volume-high"></i>
+            <div class="bar">
+                <div class="progress-bar">
+                    <div class="control-point"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
