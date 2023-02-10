@@ -111,6 +111,9 @@ main {
 .logo img {
     width: 100%;
 }
+.nav-main {
+    text-align: center;
+}
 .nav-main a {
     text-decoration: none;
     color: var(--grey-light-color);
@@ -324,14 +327,14 @@ footer {
     width: 70px;
 }
 .f-box.left {
-    flex-basis: 200px;
+    flex-basis: 150px;
 }
 .f-box.center {
     flex-grow: 1;
     max-width: 500px;
 }
 .f-box.right {
-    flex-basis: 200px;
+    flex-basis: 150px;
     padding-left: 10px;
 }
 
@@ -356,6 +359,9 @@ footer {
     }
     .logo-small {
         display: none;
+    }
+    .nav-main {
+        text-align: left;
     }
     .hide {
         display: inline-block;
